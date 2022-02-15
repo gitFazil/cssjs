@@ -1,0 +1,89 @@
+*{
+  box-sizing:border-box;
+}
+html{
+  margin:0;
+  padding:0;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+height: 100vh;
+display: grid;
+place-items:center;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius:5px;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover {
+opacity: 0.8;
+}
+#nameResult{
+  color: darkolivegreen;
+}
+.welcome{
+  display: none;
+}
+.authError{
+  color: red;
+  visibility: hidden;
+}
+.signup {
+width: auto;
+padding: 10px 18px;
+background-color: #3da6d0;
+}
+
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+background: rgba( 235, 235, 235, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.signup {
+   width: 100%;
+}
+}
